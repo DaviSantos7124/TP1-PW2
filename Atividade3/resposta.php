@@ -1,22 +1,16 @@
 <?php
 $reais = $_POST['reais'];
 
-$dolar = $reais / 5;
-$euro = $reais / 5.4;
-$libra = $reais / 6.3;
+$dolar = $reais / 5.00;
+$euro = $reais / 5.40;
+$libra = $reais / 6.30;
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Resultado</title>
-</head>
-<body>
+<h1>Resultado</h1>
 
-Dólar: <?php echo '$' . $dolar; ?><br>
-Euro: <?php echo '€' . $euro; ?><br>
-Libra: <?php echo '£' . $libra; ?>
+Dólar: <?php echo number_format($dolar, 2); ?><br>
+Euro: <?php echo number_format($euro, 2); ?><br>
+Libra: <?php echo number_format($libra, 2); ?>
 
-</body>
-</html>
+
+<meta charset="UTF-8">

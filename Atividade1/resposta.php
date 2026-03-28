@@ -15,16 +15,9 @@ if ($imc < 18.5) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Resultado</title>
-</head>
-<body>
+<h1>Resultado</h1>
 
-IMC: <?php echo $imc; ?><br>
+IMC: <?php echo number_format($imc, 2); ?><br>
 Situação: <?php echo $situacao; ?>
 
-</body>
-</html>
+<meta charset="UTF-8">

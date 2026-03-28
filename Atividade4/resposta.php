@@ -16,16 +16,9 @@ if ($media < 5) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Resultado</title>
-</head>
-<body>
+<h1>Resultado</h1>
 
-Média: <?php echo $media; ?><br>
+Média: <?php echo number_format($media, 2); ?><br>
 Conceito: <?php echo $conceito; ?>
 
-</body>
-</html>
+<meta charset="UTF-8">

@@ -1,22 +1,16 @@
 <?php
 $salario = $_POST['salario'];
+$salarioMinimo = 1412;
 
-if ($salario <= 2824) {
+if ($salario <= 2 * $salarioMinimo) {
     $liquido = $salario - ($salario * 0.08);
 } else {
     $liquido = $salario - ($salario * 0.10);
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Resultado</title>
-</head>
-<body>
+<h1>Resultado</h1>
 
-Salário líquido: <?php echo $liquido; ?>
+Salário líquido: R$ <?php echo number_format($liquido, 2, ',', '.'); ?>
 
-</body>
-</html>
+<meta charset="UTF-8">

@@ -1,19 +1,12 @@
 <?php
-$nome = $_POST['nome'];
-$sobrenome = $_POST['sobrenome'];
+$nome = strtolower($_POST['nome']);
+$sobrenome = strtolower($_POST['sobrenome']);
 
 $email = $nome . "." . $sobrenome . "@cps.sp.gov.br";
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Resultado</title>
-</head>
-<body>
+<h1>Email Gerado</h1>
 
-Email: <?php echo $email; ?>
+<?php echo $email; ?>
 
-</body>
-</html>
+<meta charset="UTF-8">

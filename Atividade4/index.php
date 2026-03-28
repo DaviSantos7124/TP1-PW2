@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>Média</h1>
+<h1>Média de Notas</h1>
 
 <form action="resposta.php" method="POST">
     Nota 1: <input type="text" name="n1"><br>
